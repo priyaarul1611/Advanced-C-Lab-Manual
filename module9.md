@@ -13,11 +13,21 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
+int top,i;
+char stack[100];
+void display()
+{
+    for(i=top;i>=0;i--)
+    {
+        printf("%c\n",stack[i]);
+    }
+}
+```
 
 Output:
 
-//paste your output here
+<img width="500" height="530" alt="image" src="https://github.com/user-attachments/assets/267bfc9f-122d-4a2d-ada1-02cfb5f2329e" />
 
 
 
@@ -35,12 +45,27 @@ Algorithm:
 4.	Call the push function as needed.
  
 Program:
-
-//type your code here
+```
+char stack[100];
+int size=3,top=-1;
+void push (char data)
+{
+    if(top==size-1)
+    {
+        printf("stack is full\n");
+    }
+    else
+    {
+        top++;
+        stack[top]=data;
+        
+    }
+}
+```
 
 Output:
 
-//paste your output here
+<img width="500" height="550" alt="image" src="https://github.com/user-attachments/assets/6ad989d6-8026-437c-8f5b-c575afe3ddd1" />
 
 
 
@@ -62,11 +87,26 @@ Algorithm:
  
 Program:
 
-//type your code here
-
+```
+int queue[50], rear=-1, front=-1;
+void display()
+{
+    if(front==-1)
+    {
+        printf("No elements to display");
+    }
+    else
+    {
+        for(int i=front;i<=rear;i++)
+        {
+            printf("%d ",queue[i]);
+        }
+    }
+}
+```
 Output:
+<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/fea6f24a-5211-40aa-93dd-de17bae56ffc" />
 
-//paste your output here
 
 
 Result:
@@ -85,12 +125,24 @@ Algorithm:
 4.	Call the enqueue function as needed.
 
 Program:
+```
+float queue[50];
+int front,rear,size=5;
+void enqueue(float data)
+{
+    if(front==-1||front<size)
+    {
+        front=0;
+        rear++;
+        queue[rear]=data;
+    }
+}
+```
 
-//type your code here
 
 Output:
 
-//paste your output here
+<img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/ddba6f04-e110-4765-b9a0-429f34d4f411" />
 
 Result:
 Thus, the program to insert elements in queue using array is verified successfully.
@@ -120,12 +172,19 @@ o	After deletion, check if the front pointer has passed the rear pointer (front 
 
 
 Program:
-
-//type your code here
-
+```
+int front, rear;
+void dequeue()
+{
+    if(front>=0)
+    {
+        front++;
+    }
+}
+```
 Output:
+<img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/98f825dd-da7f-48f5-8c22-1a662369f53b" />
 
-//paste your output here
 
 
 Result:
