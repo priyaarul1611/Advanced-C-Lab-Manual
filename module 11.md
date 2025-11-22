@@ -12,10 +12,26 @@ Algorithm:
 5.	Call the max_of_four function with the input integers and store the result in the greater variable
  
 Program:
-//type your code here
-
+```
+#include <stdio.h>
+int max_of_four(int a,int b,int c,int d)
+{
+    int max=a;
+    if(b>max) max=b;
+    if(c>max) max=c;
+    if(d>max) max=d;
+    return max;
+}
+int main()
+{
+    int a,b,c,d;
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    printf("%d",max_of_four(a,b,c,d));
+}
+```
 Output:
-//paste your output here
+<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/76dfd1e3-cf11-4670-8c6d-4d9901c9ce2c" />
+
 
 Result:
 Thus, the program  that create a function to find the greatest number is verified successfully.
@@ -114,7 +130,8 @@ int main()
 }
 ```
 Output:
-//paste your output here
+<img width="245" height="192" alt="image" src="https://github.com/user-attachments/assets/9d28b50c-88b4-49d2-811a-e856c20eb2f8" />
+
 
 
 Result:
@@ -154,7 +171,7 @@ int main()
 }
 ```
 Output:
-<img width="554" height="271" alt="image" src="https://github.com/user-attachments/assets/9f32c08b-a045-4db0-8f71-4f221ba1f059" />
+<img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/9f32c08b-a045-4db0-8f71-4f221ba1f059" />
 
 
 Result:
